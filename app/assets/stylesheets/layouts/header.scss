@@ -1,0 +1,35 @@
+header{
+  background-color: $light-gray-color;
+  height: 200px;
+  .header-content{
+    @media (min-width: $screen-md) {
+      margin-left: 0px;
+    } 
+    @media (max-width: $screen-md) {
+      text-align: center;
+    }   
+    padding-top: 20px;
+    .button-container{
+      @media (max-width: $screen-xs-min) {
+        margin-top: 30px;
+      }
+      @media (min-width: $screen-xs-min) {
+        margin-top: 20px;
+      }
+    }
+    a.medium-button{
+      @media (max-width: $screen-sm) {
+        padding: 20px 65px 20px 65px;
+      }
+      @media (min-width: $screen-sm) {
+        padding: 15px 60px 15px 60px;
+      }
+      color: white;
+      background-color: $gray-color;
+      &:hover {
+        background-color: gray;
+        text-decoration: none;
+      }
+    }
+  }
+}

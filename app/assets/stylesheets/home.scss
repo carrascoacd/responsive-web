@@ -1,0 +1,30 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.grid-content{
+  @media (max-width: $screen-md) {
+    margin-right: -10px;
+  }   
+  margin-top: 20px;
+  margin-bottom: $footer-height + 10;
+  .cell{
+    .dummy{
+       margin-top: 120%;
+    }
+    .cell-content{
+      position: absolute;
+      @media (max-width: $screen-sm) {
+        top: 5px;
+        left: 5px;
+      } 
+      @media (min-width: $screen-sm) {
+        top: 15px;
+        left: 15px;
+      }
+      bottom: 0;
+      right: 0;
+      background-color: $light-gray-color;    
+    }
+  }
+}

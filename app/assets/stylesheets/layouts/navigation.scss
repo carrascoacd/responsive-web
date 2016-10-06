@@ -1,0 +1,32 @@
+.desktop-nav-bar{
+  background-color: $gray-color;
+  height: 40px;
+  .navigation-button{
+    float: right;
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+    text-decoration: none;
+    width: 20px;
+  }
+  .desktop-nav-bar-content{
+    margin-top: 10px;
+  }
+  color: white;
+  font-size: 12px;
+}
+
+.mobile-nav-bar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background-color: $gray-color;
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s;  
+  color: white;
+}
